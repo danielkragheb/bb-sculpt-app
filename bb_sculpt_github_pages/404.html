@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>BB Sculpt</title>
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="description" content="BB Sculpt mobile experience: luxury movement, recovery, and progress." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="BB Sculpt" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="brand-panel">
+      <div class="brand-top">
+        <div class="logo-stack">
+          <div class="logo-mark">BB</div>
+          <div class="logo-word">SCULPT</div>
+        </div>
+        <div class="hero-copy">
+          <h1>Your studio.<br />Your plan.<br />Your progress.</h1>
+          <p>
+            A premium movement and recovery experience built around sculpt classes,
+            personalized programming, progress tracking, and recovery care.
+          </p>
+        </div>
+        <div class="feature-list">
+          <div class="feature-item"><span class="feature-icon"></span>Book classes & recovery sessions</div>
+          <div class="feature-item"><span class="feature-icon"></span>Track progress and measurements</div>
+          <div class="feature-item"><span class="feature-icon"></span>Personalized plans</div>
+          <div class="feature-item"><span class="feature-icon"></span>Expert care & guidance</div>
+          <div class="feature-item"><span class="feature-icon"></span>All in one luxury experience</div>
+        </div>
+      </div>
+
+      <div class="brand-actions">
+        <div class="store-row">
+          <button class="ghost-btn" data-action="toast" data-message="App Store button is placeholder for launch.">App Store</button>
+          <button class="ghost-btn" data-action="toast" data-message="Google Play button is placeholder for launch.">Google Play</button>
+        </div>
+        <button class="primary-btn" data-action="route" data-route="home">Open app</button>
+      </div>
+    </aside>
+
+    <main class="device-stage">
+      <div class="device-shell">
+        <div class="device-notch"></div>
+        <div id="app" class="app-scroll"></div>
+      </div>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
